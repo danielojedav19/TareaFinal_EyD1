@@ -1,0 +1,82 @@
+/* Fondo con imagen desvanecida */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../Images/imagen tarea.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Caja semitransparente para el contenido */
+    border-radius: 10px;
+  }
+  
+  /* Textarea más angosta horizontalmente */
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  /* Estilo del botón (rojo claro desvanecido con texto blanco) */
+  button {
+    background-color: rgba(255, 100, 100, 0.8); /* Rojo claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 100, 100, 1); /* Rojo más intenso */
+  }
+  
+  /* Títulos y texto */
+  h1, h2, h3, p {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* Enlaces */
+  a {
+    color: rgba(253, 93, 147, 1);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgba(253, 93, 147, 0.8);
+  }
+  
+  /* Estilo adicional para los encabezados */
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  

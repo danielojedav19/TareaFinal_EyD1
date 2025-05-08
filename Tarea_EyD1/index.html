@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo de Fútbol</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Torneo de Fútbol</h1>
+    <h2>Introduce los datos del torneo</h2>
+    <p>Escribe la cadena con la información del torneo, como el nombre del torneo, los equipos y los resultados de los partidos.</p>
+
+    <!-- Caja de texto para ingresar los datos del torneo -->
+    <textarea id="torneoInput" placeholder="Introduce los datos del torneo aquí..."></textarea>
+
+    <!-- Botón para procesar -->
+    <button id="procesarTorneo">Procesar Torneo</button>
+
+    <h2>Clasificación Final</h2>
+    <div id="clasificacionResultado">
+      <p>Introduce los datos y haz clic en "Procesar Torneo" para ver la clasificación.</p>
+    </div>
+  </div>
+
+  <footer style="text-align: center; margin-top: 30px;">
+    <p>&copy; 2025 Torneo de Fútbol</p>
+  </footer>
+
+  <script type="module">
+    import { resolverTorneo } from './Scripts/util.js';
+
+    document.getElementById('procesarTorneo').addEventListener('click', function () {
+      const torneoInput = document.getElementById('torneoInput').value.trim();
+
+      if (torneoInput) {
+        const resultado = resolverTorneo(torneoInput);
+        document.getElementById('clasificacionResultado').innerHTML = `<pre>${resultado}</pre>`;
+      } else {
+        alert("Por favor, introduce los datos del torneo.");
+      }
+    });
+  </script>
+</body>
+</html>
+
