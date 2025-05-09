@@ -12,7 +12,7 @@ class torneo {
         }
     }
 
-    // Registrar un partido con los goles anotados
+    // Registrar un partido con los goles anotados xd
     registrarPartido(equipo1, goles1, equipo2, goles2) {
         // Asegurarse de que ambos equipos existan en el torneo
         if (equipo1 in this.equipos && equipo2 in this.equipos) {
